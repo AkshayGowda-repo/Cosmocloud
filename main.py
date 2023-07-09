@@ -5,7 +5,7 @@ from pymongo import MongoClient
 app = FastAPI()
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://akshay:AkshayG5723@nodeexpressprojects.utkubig.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://akshay:<password>@nodeexpressprojects.utkubig.mongodb.net/?retryWrites=true&w=majority")
 db = client["ecommerce"]
 products_collection = db["products"]
 orders_collection = db["orders"]
